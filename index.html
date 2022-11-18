@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do UI</title>
+    <link rel="stylesheet" href="/styles/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toDoBlock">
+        <div class="header"><button id="clear__button">To do list</button></div>
+        <div class="highPriority">
+          <h1>High priority tasks:</h1>
+          <form
+            action=""
+            class="addTask"
+            onsubmit="return false"
+            autocomplete="off"
+          >
+            <input
+              type="text"
+              placeholder="Добавить важную задачу"
+              id="input__high"
+              class="input"
+            />
+            <input type="submit" value="" id="submit__high" />
+          </form>
+          <div class="task_list"></div>
+        </div>
+        <div class="lowPriority">
+          <h1>Low priority tasks:</h1>
+          <form
+            action=""
+            class="addTask"
+            onsubmit="return false"
+            autocomplete="off"
+          >
+            <input
+              type="text"
+              placeholder="Добавить обычную задачу"
+              id="input__low"
+              class="input"
+            />
+            <input type="submit" value="" id="submit__low" />
+          </form>
+          <div class="task_list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
